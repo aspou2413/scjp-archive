@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Eclyera;
+    src: url("Eclyera.ttf");
+}
+body {
+  background-color: #222333;
+  color: white;
+  text-align: center;
+  font-family: Eclyera;
+  font-size: larger;
+}
+a {
+  color: blue;
+}

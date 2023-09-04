@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate Text by Parameter Value - Driplase Tools</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <p>Enter the text, press "Generate!" button, Open URL...</p>
+    <form>
+      <textarea style="width=300px; height=150px;" id="value"></textarea>
+    </form>
+    <button type=button onClick="generateTEXT()">Generate!</button>
+    <p>URL: <a id="export">NO URL :(</a></p>
+    <script>
+      const generateTEXT = () =>{
+        let inpVal = document.getElementById('value').value;
+        const decTxtQer = encodeURIComponent(inpVal);
+        document.getElementById("export").innerHTML = "<a href=\"https://47-z.ga/prtx/?q=" + decTxtQer + "\">https://47-z.ga/prtx/?q=" + decTxtQer;
+      }
+    </script>
+    </body>
+</html>

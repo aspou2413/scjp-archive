@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Character Counter - Driplase Tools</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Character Counter</h1>
+    <p>&nbsp;<br>Enter or paste text.</p>
+    <form>
+      <textarea style="width: 690px; height: 390px; background-color: #666777; color: white;" id="text"></textarea>
+    </form>
+    <button type=button onClick="getVALUE()">Count!</button>
+    <p>Text Length: <span id="length">0</span>
+    <script>
+      'use strict'
+      const getVALUE = () =>{
+        let inpVal = document.getElementById('text').value;
+        const teXLeg = inpVal.length;
+        document.getElementById("length").textContent = teXLeg;
+      }
+    </script>
+  </body>
+</html>

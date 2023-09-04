@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Counter - Driplase Tools</title>
+    <style>
+        @keyframes click {
+          0%{
+            color: #232323;
+            background-color: #8a8a8a;
+          }
+          100%{
+            color: #000000;
+            background-color: #9a9a9a;
+          }
+        }
+        #btnClick:active {
+          animation: click 1s
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Click, Click, Click, ...</h1>
+    <p><span id="count">0</span> Clicks</p>
+    <button type=button style="width: 750px; height: 500px; font-size: 250%; background-color: #9a9a9a;" id="btnClick" onClick="positiveP()"></button>
+    <script>
+      'use strict'
+      var c = 0;
+      const positiveP = () =>{
+        c += 1;
+        document.getElementById('count').textContent = c;
+        document.getElementById('btnClick').textContent = c;
+      }
+    </script>
+  </body>
+</html>

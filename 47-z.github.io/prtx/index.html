@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Text by Parameter value</title>
+  </head>
+  <body>
+    <h1 id="value"></h1>
+    <script>
+      'use strict'
+      var qer = document.location.search.substring(1);
+      var prmt = qer.split('=');
+      if (decodeURIComponent(prmt[0]) === "q") {
+        document.getElementById('value').textContent = decodeURIComponent(prmt[1]);
+      } else {
+        document.getElementById("value").textContent = "Bad parameters."
+      }
+    </script>
+  </body>
+</html>
+      
